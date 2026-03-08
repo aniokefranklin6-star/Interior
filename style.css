@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(images/interior1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin:0 10px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul li{
+    /* position: relative; */
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    padding: 0 5px;
+    text-decoration: none;
+    list-style: none;
+}
+ul li a{
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    position: relative;
+}
+ ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    /* color: rgb(8, 247, 155); */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+    /* background-color: black; */
+}
+ul li a:hover::after{
+    width: 100%;
+    background-color: aqua;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: aliceblue;
+    margin: 0 20px;
+    padding: 0 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    color: aliceblue;
+    margin: 30px;
+    padding: 0 30px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: larger
+}
+.heading{
+    text-align: center;
+    justify-items: center;
+    margin:0 20px;
+    padding: 0 20px;
+}
+button{
+    margin:0 20px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 1px solid cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+    color: black;
+    transition: 0.5s;
+}
